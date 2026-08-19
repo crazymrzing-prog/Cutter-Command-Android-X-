@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simplified captain's-hat + red cutter/blade-holder silhouette, in the
+     red/black/gold palette. An original design - no logos, wordmarks, or
+     branding from any manufacturer. Content is scaled to sit within the
+     108dp canvas's inner ~66dp safe zone so adaptive-icon masking on
+     different launchers doesn't clip it. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- red cylinder (blade holder) body -->
+    <path
+        android:pathData="M42.75,49.125 H65.25 A4.5,4.5 0 0 1 69.75,53.625 V73.125 A4.5,4.5 0 0 1 65.25,77.625 H42.75 A4.5,4.5 0 0 1 38.25,73.125 V53.625 A4.5,4.5 0 0 1 42.75,49.125 Z"
+        android:fillColor="#B0161E" />
+
+    <!-- darker grip band through the middle -->
+    <path
+        android:pathData="M38.25,61.125 H69.75 V68.625 H38.25 Z"
+        android:fillColor="#780E14" />
+
+    <!-- blade tip -->
+    <path
+        android:pathData="M50.25,77.625 L57.75,77.625 L54,86.625 Z"
+        android:fillColor="#D6D6D6" />
+
+    <!-- hat brim -->
+    <path
+        android:pathData="M34.5,44.625 H73.5 A3,3 0 0 1 76.5,47.625 V48.375 A3,3 0 0 1 73.5,51.375 H34.5 A3,3 0 0 1 31.5,48.375 V47.625 A3,3 0 0 1 34.5,44.625 Z"
+        android:fillColor="#1A1818"
+        android:strokeColor="#5A5856"
+        android:strokeWidth="0.9" />
+
+    <!-- hat band -->
+    <path
+        android:pathData="M36.75,38.625 H71.25 A2.25,2.25 0 0 1 73.5,40.875 V44.625 A2.25,2.25 0 0 1 71.25,46.875 H36.75 A2.25,2.25 0 0 1 34.5,44.625 V40.875 A2.25,2.25 0 0 1 36.75,38.625 Z"
+        android:fillColor="#1A1818"
+        android:strokeColor="#5A5856"
+        android:strokeWidth="0.9" />
+
+    <!-- gold braid across the band -->
+    <path
+        android:pathData="M35.6,41.25 H72.4 A1.1,1.1 0 0 1 73.5,42.375 A1.1,1.1 0 0 1 72.4,43.5 H35.6 A1.1,1.1 0 0 1 34.5,42.375 A1.1,1.1 0 0 1 35.6,41.25 Z"
+        android:fillColor="#C49B3A" />
+
+    <!-- gold badge -->
+    <path
+        android:pathData="M51,42.375 A3,3 0 1 0 57,42.375 A3,3 0 1 0 51,42.375 Z"
+        android:fillColor="#C49B3A" />
+
+    <!-- white domed top of the cap -->
+    <path
+        android:pathData="M33,31.125 A21,9.75 0 1 0 75,31.125 A21,9.75 0 1 0 33,31.125 Z"
+        android:fillColor="#F5F4F0" />
+
+</vector>

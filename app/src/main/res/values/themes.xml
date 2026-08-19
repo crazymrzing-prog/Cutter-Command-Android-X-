@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.CutterCommand" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+</resources>

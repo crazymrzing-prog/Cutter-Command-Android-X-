@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cutter Command</string>
+    <string name="app_version">1.0.01</string>
+
+    <string name="about_text">Cutter Command\nVersion %1$s</string>
+
+    <string name="help_text">Getting started:\n1. On the main screen, make sure your phone is on the same Wi-Fi network as the cutter (and that mobile data is not overriding your Wi-Fi connection), enter the IP address and port, then tap Connect. The status line will show Connected once the link is up.\n2. Choose a plot file, then tap Start cut to send it to the machine.\n\nUp Speed (US), Cut Speed (VS), and Pressure (FS): these are read directly from the loaded plot file, not set by the app. If a setting isn\'t defined in the file, the display shows \"Machine Setting\" - meaning whatever is already configured on the cutter itself applies.\n\nManual controls:\n- The jog pad (arrows): while held, it repeatedly cycles move-then-stop for as long as you hold it, stopping for good once released. The ▶▶ button in the center switches jog speed mode: default (▶▶ its normal color) is Fast, each cycle adds a 0.5 second pause before the stop; tap it once to switch to Normal (button turns red), which cycles with no deliberate pause. Tap again to switch back.\n- Test triggers the machine\'s self-test.\n- Stop (next to Start cut) halts any current movement immediately, regardless of jog mode. Pause pauses the running job.\n\nThe log at the bottom of the main screen records every command sent and received, so you can see exactly what the app told the cutter to do.\n\nIf something isn\'t working, see Error messages in this menu for what common log entries mean.</string>
+
+    <string name="error_reference_text"><![CDATA[
+<b>Status line (top of screen)</b><br/><br/>
+<b>Off</b> - Not connected to the cutter.<br/><br/>
+<b>Connected</b> - TCP connection to the cutter is established.<br/><br/>
+<b>Wait</b> - The plot file is currently being sent.<br/><br/>
+<b>UP OK</b> - The file finished sending without error.<br/><br/>
+<b>UP Err</b> - The send failed or timed out (90s) while transferring the file. Check the machine and the cable/Wi-Fi link.<br/><br/><br/>
+<b>Log messages</b><br/><br/>
+<b>Connected to cutter - OK</b><br/>Confirms the TCP connection succeeded.<br/><br/>
+<b>Connect failed: &lt;reason&gt;</b><br/>Could not open a connection. Check the IP address, port, and that the phone and cutter are on the same network.<br/><br/>
+<b>Send failed: &lt;reason&gt;</b><br/>An error occurred while sending data, or the send timed out after 90 seconds. The connection may have dropped mid-send.<br/><br/>
+<b>Failed to read file: &lt;reason&gt;</b><br/>The selected file could not be opened or read.<br/><br/><br/>
+<b>Common underlying network errors</b><br/>(shown after "Connect failed:" or "Send failed:")<br/><br/>
+<b>ENETUNREACH / Network is unreachable</b><br/>The phone has no network route to that IP. Usually means the phone isn\'t actually on the cutter\'s network (check Wi-Fi), or mobile data is being used instead of Wi-Fi.<br/><br/>
+<b>ECONNREFUSED / Connection refused</b><br/>The IP was reachable but nothing is listening on that port. Check the port number and that the cutter\'s network service is running.<br/><br/>
+<b>ETIMEDOUT / Connection timed out</b><br/>No response was received in time. Check the cutter is powered on and the IP address is correct.
+]]></string>
+</resources>
